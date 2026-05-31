@@ -1,0 +1,139 @@
+# =============================================================================
+# .gitignore for Basics of FE Analysis course material
+# MATLAB / Python / LaTeX / ANSYS / macOS
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# macOS
+# -----------------------------------------------------------------------------
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# -----------------------------------------------------------------------------
+# General temporary and backup files
+# -----------------------------------------------------------------------------
+*.tmp
+*.temp
+*.bak
+*.backup
+*.old
+*~
+~$*
+
+# -----------------------------------------------------------------------------
+# MATLAB
+# -----------------------------------------------------------------------------
+*.asv
+*.m~
+*.mex*
+*.fig
+slprj/
+sccprj/
+codegen/
+.mlint/
+*.mlappinstall
+
+# MATLAB data files
+# Uncomment the next line if you do NOT want to share .mat files.
+# *.mat
+
+# -----------------------------------------------------------------------------
+# Python
+# -----------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# -----------------------------------------------------------------------------
+# LaTeX auxiliary files
+# Keep .tex and .bib files trackable, but ignore build files.
+# -----------------------------------------------------------------------------
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.idx
+*.ilg
+*.ind
+*.lof
+*.log
+*.lot
+*.nav
+*.out
+*.run.xml
+*.snm
+*.synctex.gz
+*.toc
+*.vrb
+*.xdv
+
+# -----------------------------------------------------------------------------
+# Beamer / LaTeX build folders, if used
+# -----------------------------------------------------------------------------
+build/
+_output/
+latex.out/
+
+# -----------------------------------------------------------------------------
+# ANSYS / MAPDL generated files
+# Keep source files such as .mac, .inp and useful example files.
+# Ignore typical generated databases, result files and logs.
+# -----------------------------------------------------------------------------
+*.db
+*.rst
+*.rth
+*.rmg
+*.emat
+*.esav
+*.full
+*.mode
+*.mntr
+*.page
+*.stat
+*.err
+*.lock
+
+# ANSYS Workbench generated folders/files, if accidentally copied
+*_files/
+*.wbpj
+*.wbjn
+*.mechdat
+
+# -----------------------------------------------------------------------------
+# Large archives and compressed files
+# -----------------------------------------------------------------------------
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+*.rar
+
+# -----------------------------------------------------------------------------
+# Private teaching material: do not put these into GitHub
+# -----------------------------------------------------------------------------
+solutions_private/
+exam_solutions_private/
+student_answers/
+student_submissions/
+grades/
+teacher_notes/
+private_notes/
+drafts_private/
+exams_private/
+
+# -----------------------------------------------------------------------------
+# Local editor settings
+# -----------------------------------------------------------------------------
+.vscode/
+.idea/
