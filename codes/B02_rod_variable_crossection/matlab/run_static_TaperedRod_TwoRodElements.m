@@ -36,7 +36,7 @@ L=1000;         % Length of structure [mm]
 F=1000;         % Applied force [N]
 
 % Calculates elemental average cross section
-A1avg =  (A1,A2,L,L/4);       % Averaged cross section at x=L/4 
+A1avg = LinCrossSec(A1,A2,L,L/4);       % Averaged cross section at x=L/4 
 A2avg = LinCrossSec(A1,A2,L,3/4*L);     % Averaged cross section at x=3/4*L
 
 % Elemental stiffness matrices
