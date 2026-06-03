@@ -122,6 +122,7 @@ latex.out/
 # -----------------------------------------------------------------------------
 # Private teaching material: do not put these into GitHub
 # -----------------------------------------------------------------------------
+solutions_bonustasks
 solutions_private/
 exam_solutions_private/
 student_answers/
