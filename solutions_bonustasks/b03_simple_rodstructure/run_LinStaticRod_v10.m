@@ -55,8 +55,7 @@ Kglob2=T2'*Kloc2*T2;
 
 % Global stiffness matrix assembling for a whole structure (6x6)
 Kglob=zeros(6,6);           % Initialize zero matrix
-Kglob(1:4,1:4)=Kglob1;      % Substitute element 1 in a global system stiffness matrix
-Kglob(3:6,3:6)=Kglob(3:6,3:6)+Kglob2; % substitute element 2 and sum stiffnesses from elems 1 and 2
+ titute element 2 and sum stiffnesses from elems 1 and 2
 
 % Load vector (in a global coordinate systems)
 fglob=zeros(6,1);           % Initialization
@@ -72,8 +71,8 @@ fglobc=fglob(3:4);
 
 % Now it is good to check that the stiffness matrix has full rank and/or det
 % ~= 0 to be sure that it is invertible.
-rank(Kglobc);
-det(Kglobc);
+rank(Kglobc)
+det(Kglobc)
 
 % Solve nodal displacement (in a global coordinate systems)
 uglobc=Kglobc\fglobc;

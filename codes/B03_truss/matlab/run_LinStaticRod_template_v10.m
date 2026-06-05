@@ -27,13 +27,13 @@ format shortG;  % just to display values in more convient manner
 E1=210000;
 A1=100;
 L1=1000;
-alpha1=??;          % TIP: Give the correct angle (in radians)!!!!
+alpha1=-45*pi/180;          % TIP: Give the correct angle (in radians)!!!!
 
 % Rod 2
 E2=210000;
 A2=50;
 L2=1000;
-alpha2=??;`         % TIP: Give the correct angle (in radians)!!!!
+alpha2=-135*pi/180;`         % TIP: Give the correct angle (in radians)!!!!
 
 % Force (in vertical (global) direction at node 2)
 F=-100000;
