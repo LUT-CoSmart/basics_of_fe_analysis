@@ -15,7 +15,7 @@ r = r1*(1 - x/L) + r2*x/L;
 % Circular cross-sectional area
 A = pi*r^2;
 
-%epsilon = diff(u);                  % strain epsilon = du/dx                    
+epsilon = diff(u);                  % strain epsilon = du/dx                    
 %DE = -diff(E*A(x)*epsilon) == 0     % Differential equation
 %bc = [u(0) == 0; E*A(L)*epsilon(L) == F] % Boundary conditions
 
