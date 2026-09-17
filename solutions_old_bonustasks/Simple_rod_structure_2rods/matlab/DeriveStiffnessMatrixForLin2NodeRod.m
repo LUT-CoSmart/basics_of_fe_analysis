@@ -1,9 +1,10 @@
-% BK10A6400 Basics of FE Analysis (FEMBasics2023)
+% BK10A6400 Basics of FE Analysis (FEMBasics2026)
 % Teacher in charge: Marko Matikainen
-% Code template for the Bonus Task 3.
+% Code template for the Bonus Task 2.
 %
+% Some questions with respect to the theory may come in the quiz!
 % The code derives stiffness matrix for a two node linear rod (bar, truss) element 
-% Coded by MKM for student's usage in the FEMBasics2023 course
+% Coded by MKM for student's usage in the FEMBasics2026 course
 
 
 %  Two node linear rod element ########################################
@@ -41,6 +42,7 @@ N=p.'*AA^-1;
 
 matlabFunction(N,'file','Shapef2NodeRod','vars',{x,L});
 
+
 uh=N*uu;
 
 % Axial strain
@@ -49,7 +51,9 @@ Epsxx=diff(uh,x);
 % Internal strain energy for a rod element
 Wintdx=1/2*E*A*Epsxx^2;
 
+% Test energy with different inputs
 Wint=int(Wintdx,x,0,L)
+
 
 % Fint= d Wint / d u
 DOFs=2;
@@ -64,6 +68,7 @@ for ii=1:DOFs
     end
 end
 
+matlabFunction(Wint,'file','WintRod','vars',{u1,u2,A,E,L});
 matlabFunction(Kloc,'file','KlocRod','vars',{A,E,L});
 
 

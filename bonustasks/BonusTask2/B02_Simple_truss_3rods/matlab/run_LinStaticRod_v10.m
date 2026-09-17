@@ -35,7 +35,11 @@ L2=1000;
 alpha2=-135*pi/180;
 
 % TIP: Add Rod 3
-
+% Rod 2
+E3=210000;
+A3=10;
+L3=cos(pi/4)*1000;
+alpha3=0;
 
 % Force (in vertical (global) direction at node 2)
 F=-100000;
@@ -48,12 +52,12 @@ T1=TRod(alpha1);
 T2=TRod(alpha2);
 
 % TIP: Calculate tarnsformation matrix
-
+T3=TRod(alpha3);
 % Local elemental stiffness matrices
 Kloc1=KlocRod(E1,A1,L1);
 Kloc2=KlocRod(E2,A2,L2);
 % TIP: Calculate Kloc3
-
+Kloc3=KlocRod(E3,A3,L3);
 
 % Global elemental stiffness matrix for a rod 1
 Kglob1=T1'*Kloc1*T1;
@@ -61,8 +65,9 @@ Kglob1=T1'*Kloc1*T1;
 Kglob2=T2'*Kloc2*T2;
 
 % TIP: Calculate Kglob 3...
+Kglob3=Kloc3;
 
-% TIP: Check and do changes if needed.... 
+% TIP: Check and do changes if needed....
 
 
 % Global stiffness matrix assembling for a whole structure (6x6)

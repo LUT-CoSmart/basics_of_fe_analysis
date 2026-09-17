@@ -2,6 +2,7 @@
 % Teacher in charge: Marko Matikainen
 % Code template for the Bonus Task 2.
 %
+% Some questions with respect to the theory may come in the quiz!
 % The code derives stiffness matrix for a two node linear rod (bar, truss) element 
 % Coded by MKM for student's usage in the FEMBasics2026 course
 
@@ -40,6 +41,7 @@ p=transpose([1,x]);
 N=p.'*AA^-1;
 
 matlabFunction(N,'file','Shapef2NodeRod','vars',{x,L});
+
 
 uh=N*uu;
 
