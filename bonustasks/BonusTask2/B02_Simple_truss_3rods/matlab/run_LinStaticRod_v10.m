@@ -67,7 +67,8 @@ Kglob2=T2'*Kloc2*T2;
 % TIP: Calculate Kglob 3...
 Kglob3=Kloc3;
 
-% TIP: Check and do changes if needed....
+% TIP: Check and do changes if needed....you need to set up new sizes of
+% vectros and matrices...
 
 
 % Global stiffness matrix assembling for a whole structure (6x6)
