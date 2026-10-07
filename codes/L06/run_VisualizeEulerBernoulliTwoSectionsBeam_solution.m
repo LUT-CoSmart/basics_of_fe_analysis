@@ -95,12 +95,12 @@ fprintf('Difference in rotation     = %e rad\n', ...
 
 nplot = 200;
 
-%x1 = linspace(0,L1,nplot);
-%x2 = linspace(L1,L1+L2,nplot);
+x1 = linspace(0,L1,nplot);
+x2 = linspace(L1,L1+L2,nplot);
 
 % lets presend defelctiosn outside of physical area:
-x1 = linspace(-L1,L1+L2,nplot);
-x2 = linspace(0,L1+L2,nplot);
+%x1 = linspace(-L1,L1+L2,nplot);
+%x2 = linspace(0,L1+L2,nplot);
 
 
 %% ------------------------------------------------------------------------
