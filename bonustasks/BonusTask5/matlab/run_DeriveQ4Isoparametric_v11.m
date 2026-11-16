@@ -1,7 +1,7 @@
-% BK10A6400 Basics of FE Analysis (FEMBasics2024)
+% BK10A6400 Basics of FE Analysis (FEMBasics2026)
 % Teacher in charge: Marko Matikainen (MKM)
 % Derivation of the bilinear plane element
-% Code template for the Bonus Task 6.
+% Code template for the Bonus Task 5.
 
 clear all
 close all

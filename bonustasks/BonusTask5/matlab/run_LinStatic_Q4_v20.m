@@ -1,6 +1,6 @@
 % BK10A6400 Basics of FE Analysis (FEMBasics2026)
 % Teacher in charge: Marko Matikainen (MKM)
-% Template for the bonus task 4. This is quiet similar with a template for the Exercise 3. The code solves global displacements at free end 
+% Template for the Bonus Task 5. This is quite similar to a template for the Exercise 3. The code solves global displacements at free end 
 % by using Q4 elements.
 %
 % Goal: Solve the problem with two elements (KlocQ4xi and KlocQ4psR)
@@ -99,7 +99,7 @@ for ii=1:NumberOfElems
 end
 
 
-uglob=zeros(NumberOfAllDofs);       
+uglob=zeros(NumberOfAllDofs,1);       
 fglob=zeros(NumberOfAllDofs,1);
 fglob(AppliedForceDofIDs)=F/length(AppliedForceDofIDs);
 
