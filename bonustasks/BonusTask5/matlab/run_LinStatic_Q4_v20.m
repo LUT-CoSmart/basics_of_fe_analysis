@@ -81,12 +81,12 @@ X0allvec=reshape(X0all',[],1);
 for ii=1:NumberOfElems
     X=X0allvec(ElemDOFsConnectivity(ii,:));
     % full Gaussian int
-    Kloc=KlocQ4xi(X,E,nu,Lz);              
+    %Kloc=KlocQ4xi(X,E,nu,Lz);              
     % Selective reduced int
     %Kloc=KlocQ4psR(X,E,nu,Lz);              % Function of nodal coordinates (trasnformationm via isoparametric)    
  
     % Quadratic Q8 (8x8) 
-    %Kloc=KlocQ8(X,E,nu,Lz);
+    Kloc=KlocQ8(X,E,nu,Lz);
 
 
     for jj = 1:LocalSize   
